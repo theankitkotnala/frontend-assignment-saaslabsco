@@ -1,0 +1,31 @@
+.home-page {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  &> h1 {
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.39;
+  }
+  &> p {
+    font-weight: 700;
+    font-size: 20px;
+    
+  }
+  &> img {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+.home-page__header {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
