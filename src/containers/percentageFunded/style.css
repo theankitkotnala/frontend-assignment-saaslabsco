@@ -1,1 +1,10 @@
 /* Percentage Funded Style */
+
+.percentage-funded__subheader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #fefefe;
+  border-bottom: 1px solid #eeeeee;
+}

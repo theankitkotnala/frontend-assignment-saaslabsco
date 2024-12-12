@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import Button from "../../components/button";
+import { Button } from "../../components";
 import { ArrowRight } from "lucide-react";
 import saasLogoImg from "./../../assets/images/saasLabs_logo.svg";
 
@@ -13,10 +13,12 @@ const Home = () => {
         only for illustration purpose
       </div>
       <main className="home-page__main">
-        <Button className="btn-primary" size="md">
-          <Link to="/percentage-funded" className="btn-link">Go to Percentage funded table</Link>
-          <ArrowRight size={16} />
-        </Button>
+        <Link to="/percentage-funded" className="btn-link">
+          <Button className="btn-primary" size="md">
+            Go to Percentage funded table
+            <ArrowRight size={16} />
+          </Button>
+        </Link>
       </main>
     </div>
   );

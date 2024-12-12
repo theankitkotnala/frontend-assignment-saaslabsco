@@ -9,13 +9,14 @@ function* fetchPercentageFundedData(actions) {
     yield put(setRequestLoader(true));
     const response = yield ApiCall({
       method: "GET",
-      url: ENDPOINT.PERCENTAGE_FUNDED.PERCENTAGE_FUNDED_DATA,
+      url: ENDPOINT.COMMON.PERCENTAGE_FUNDED_DATA,
     });
     if (response && response.data?.data) {
       yield put(savePercentageFundedData(response.data.data));
     } else {
     }
   } catch (err) {
+    console.log(err);
   } finally {
     yield put(setRequestLoader(false));
   }

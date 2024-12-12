@@ -2,8 +2,9 @@
   border-radius: 6px;
   cursor: pointer;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   border: none;
 }
 
@@ -15,6 +16,14 @@
 
   &:hover {
     background-color: #333333;
+  }
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: inherit;
+  &:hover {
+    background-color: #f6f6f6;
   }
 }
 
