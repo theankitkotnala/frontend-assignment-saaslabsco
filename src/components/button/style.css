@@ -6,6 +6,12 @@
   align-items: center;
   gap: 6px;
   border: none;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 /* Variants */

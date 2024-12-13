@@ -5,6 +5,9 @@ import { Button } from "../../components";
 import { ArrowRight } from "lucide-react";
 import saasLogoImg from "./../../assets/images/saasLabs_logo.svg";
 
+/**
+ * This is the container for the home page
+ */
 const Home = () => {
   return (
     <div className="home-page">

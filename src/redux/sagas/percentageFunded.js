@@ -11,9 +11,8 @@ function* fetchPercentageFundedData(actions) {
       method: "GET",
       url: ENDPOINT.COMMON.PERCENTAGE_FUNDED_DATA,
     });
-    if (response && response.data?.data) {
-      yield put(savePercentageFundedData(response.data.data));
-    } else {
+    if (response && response.data) {
+      yield put(savePercentageFundedData(response.data));
     }
   } catch (err) {
     console.log(err);
