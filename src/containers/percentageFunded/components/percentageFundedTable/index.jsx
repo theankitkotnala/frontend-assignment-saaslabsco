@@ -7,7 +7,7 @@ import "./style.css";
 /**
  * This is a constant for the pagination limit
  */
-const PERCENTAGE_FUNDED_TABLE_PAGINATION_LIMIT = 10;
+const PERCENTAGE_FUNDED_TABLE_PAGINATION_LIMIT = 5;
 
 const PercentageFundedTable = (props) => {
     const [paginatedData, setPaginatedData] = useState([]);
